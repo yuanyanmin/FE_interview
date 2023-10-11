@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第 3 题：Flex · 前端面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="小阿圆">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter_vue/" />
+    
+    
+    <link rel="prev" href="section_2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    FE 汇总面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="section_1.html">
+            
+                <a href="section_1.html">
+            
+                    
+                    第 1 题：BFC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="section_2.html">
+            
+                <a href="section_2.html">
+            
+                    
+                    第 2 题：div 水平垂直居中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="section_3.html">
+            
+                <a href="section_3.html">
+            
+                    
+                    第 3 题：Flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter_vue/">
+            
+                <a href="../chapter_vue/">
+            
+                    
+                    Vue 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter_vue/section_1.html">
+            
+                <a href="../chapter_vue/section_1.html">
+            
+                    
+                    第 1 题：BFC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter_vue/section_2.md">
+            
+                <span>
+            
+                    
+                    第 2 题：div 水平垂直居中
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter_typescript/">
+            
+                <a href="../chapter_typescript/">
+            
+                    
+                    Typescript 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter_typescript/section_1.html">
+            
+                <a href="../chapter_typescript/section_1.html">
+            
+                    
+                    第 1 题：泛型的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter_node/">
+            
+                <a href="../chapter_node/">
+            
+                    
+                    Node 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter_node/section_1.html">
+            
+                <a href="../chapter_node/section_1.html">
+            
+                    
+                    第 1 题：Nest.js 装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter_node/section_2.html">
+            
+                <a href="../chapter_node/section_2.html">
+            
+                    
+                    第 2 题：Nest.js 与 Egg.js 等区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第 3 题：Flex</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="flex">Flex</h1>
+<h2 id="flex-&#x5E03;&#x5C40;&#x662F;&#x4EC0;&#x4E48;">Flex &#x5E03;&#x5C40;&#x662F;&#x4EC0;&#x4E48;</h2>
+<p>&#x5F39;&#x6027;&#x5E03;&#x5C40;&#xFF0C;&#x7528;&#x6765;&#x4E3A;&#x76D2;&#x88C5;&#x6A21;&#x578B;&#x63D0;&#x4F9B;&#x6700;&#x5927;&#x7684;&#x7075;&#x6D3B;&#x6027;</p>
+<pre><code>.box {
+  display: flex;
+}
+</code></pre><h2 id="&#x5BB9;&#x5668;&#x7684;&#x5C5E;&#x6027;">&#x5BB9;&#x5668;&#x7684;&#x5C5E;&#x6027;</h2>
+<ul>
+<li><p>flex-direction</p>
+<blockquote>
+<p>&#x51B3;&#x5B9A;&#x4E3B;&#x8F74;&#x7684;&#x65B9;&#x5411;&#xFF0C;&#x5373;&#x9879;&#x76EE;&#x7684;&#x6392;&#x5217;&#x65B9;&#x5411;</p>
+<pre><code>.box {
+  flex-direction&#xFF1A;row | row-reverse | column | column-reverse
+}
+</code></pre><ul>
+<li>row&#xFF1A; &#x6C34;&#x5E73;&#x65B9;&#x5411;&#xFF0C;&#x8D77;&#x70B9;&#x5728;&#x5DE6;&#x7AEF;</li>
+<li>row-reverse&#xFF1A;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#xFF0C;&#x8D77;&#x70B9;&#x5728;&#x53F3;&#x7AEF;</li>
+<li>column&#xFF1A;&#x5782;&#x76F4;&#x65B9;&#x5411;&#xFF0C;&#x8D77;&#x70B9;&#x5728;&#x4E0A;&#x6CBF;</li>
+<li>column-reverse&#xFF1A;&#x5782;&#x76F4;&#x65B9;&#x5411;&#xFF0C;&#x8D77;&#x70B9;&#x5728;&#x4E0B;&#x6CBF;</li>
+</ul>
+</blockquote>
+</li>
+<li><p>flex-wrap</p>
+<blockquote>
+<p>&#x82E5;&#x4E00;&#x6761;&#x8F74;&#x7EBF;&#x6392;&#x4E0D;&#x4E0B;&#x5982;&#x4F55;&#x6362;&#x884C;</p>
+<pre><code>.box {
+  flex-wrap&#xFF1A;nowrap | wrap | wrap-reverse
+}
+</code></pre><ul>
+<li>nowrap&#xFF1A; &#x4E0D;&#x6362;&#x884C;</li>
+<li>wrap&#xFF1A;&#x6362;&#x884C;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x4E0A;&#x65B9;</li>
+<li>wrap-reverse&#xFF1A;&#x6362;&#x884C;&#xFF0C;&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x4E0B;&#x65B9;</li>
+</ul>
+</blockquote>
+</li>
+<li><p>flex-flow</p>
+<blockquote>
+<p>&#x662F; flex-direction &#x4E0E; flex-wrap &#x7684;&#x7B80;&#x5199;&#x5F62;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; row nowrap</p>
+<pre><code>.box {
+  flex-flow&#xFF1A;&lt;flex-direction&gt; || &lt;flex-wrap&gt;
+}
+</code></pre></blockquote>
+</li>
+<li><p>justify-content</p>
+<blockquote>
+<p>&#x4E3B;&#x8F74;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</p>
+<pre><code>.box {
+  justify-content: flex-start | flex-end | center | space-between | space-around
+}
+</code></pre><ul>
+<li>flex-start&#xFF1A;&#x5DE6;&#x5BF9;&#x9F50;</li>
+<li>flex-end&#xFF1A;&#x53F3;&#x5BF9;&#x9F50;</li>
+<li>center&#xFF1A;&#x5C45;&#x4E2D;</li>
+<li>space-between&#xFF1A;&#x4E24;&#x7AEF;&#x5BF9;&#x9F50;&#xFF0C;&#x9879;&#x76EE;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x90FD;&#x76F8;&#x7B49;</li>
+<li>space-around&#xFF1A;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x4E24;&#x4FA7;&#x7684;&#x95F4;&#x9694;&#x76F8;&#x7B49;</li>
+</ul>
+</blockquote>
+</li>
+<li><p>align-items</p>
+<blockquote>
+<p>&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5982;&#x4F55;&#x5BF9;&#x9F50;</p>
+<pre><code>.box {
+  align-items: flex-start | flex-end | center | baseline | stretch
+}
+</code></pre><ul>
+<li>flex-start&#xFF1A;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x8D77;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>flex-end&#xFF1A;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x7EC8;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>center&#xFF1A;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x4E2D;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>baseline&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x6587;&#x5B57;&#x7684;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;</li>
+<li>stretch&#xFF1A;&#x82E5;&#x9879;&#x76EE;&#x672A;&#x8BBE;&#x7F6E;&#x9AD8;&#x5EA6;&#xFF0C;&#x5219;&#x5C06;&#x5360;&#x6EE1;&#x6574;&#x4E2A;&#x5BB9;&#x5668;&#x7684;&#x9AD8;&#x5EA6;</li>
+</ul>
+</blockquote>
+</li>
+<li><p>align-content</p>
+<blockquote>
+<p>&#x591A;&#x6839;&#x8F74;&#x7EBF;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</p>
+<pre><code>.box {
+  align-content&#xFF1A;flex-start | flex-end | center | space-between | space-around | stretch
+}
+</code></pre><ul>
+<li>flext-start&#xFF1A;&#x4E0E;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x8D77;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>flex-end&#xFF1A;&#x4E0E;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x7EC8;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>center&#xFF1A;&#x4E0E;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x4E2D;&#x70B9;&#x5BF9;&#x9F50;</li>
+<li>space-between&#xFF1A;&#x4E0E;&#x4EA4;&#x53C9;&#x8F74;&#x4E24;&#x7AEF;&#x5BF9;&#x9F50;&#xFF0C;&#x8F74;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x5E73;&#x5747;&#x5206;&#x5E03;</li>
+<li>space-around&#xFF1A;&#x6CA1;&#x8DDF;&#x8F74;&#x7EBF;&#x4E24;&#x4FA7;&#x7684;&#x95F4;&#x9694;&#x90FD;&#x76F8;&#x7B49;</li>
+<li>stretch&#xFF1A;&#x8F74;&#x7EBF;&#x5360;&#x6EE1;&#x6574;&#x4E2A;&#x4EA4;&#x53C9;&#x8F74;</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="&#x9879;&#x76EE;&#x7684;&#x5C5E;&#x6027;">&#x9879;&#x76EE;&#x7684;&#x5C5E;&#x6027;</h2>
+<ul>
+<li><p>order</p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x9879;&#x76EE;&#x7684;&#x6392;&#x5E8F;&#x987A;&#x5E8F;&#xFF0C;&#x6570;&#x503C;&#x8D8A;&#x5C0F;&#x8D8A;&#x9760;&#x524D;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0</p>
+<pre><code>.item {
+  order: &lt;integer&gt;
+}
+</code></pre></blockquote>
+</li>
+<li><p>flex-grow</p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x9879;&#x76EE;&#x7684;&#x653E;&#x5927;&#x6BD4;&#x4F8B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x5373;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#xFF0C;&#x4E5F;&#x4E0D;&#x653E;&#x5927;</p>
+<pre><code>.item {
+  flex-grow&#xFF1A;&lt;number&gt;
+}
+</code></pre><p>&#x5982;&#x679C;&#x6240;&#x6709;&#x9879;&#x76EE;&#x7684; flex-grow &#x5C5E;&#x6027;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x4ED6;&#x4EEC;&#x5C06;&#x7B49;&#x5206;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684; flex-grow &#x5C5E;&#x6027;&#x4E3A;2&#xFF0C;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x524D;&#x8005;&#x5360;&#x636E;&#x7684;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x5C06;&#x6BD4;&#x5176;&#x4ED6;&#x9879;&#x591A;&#x4E00;&#x500D;</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>flex-shrink</p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x9879;&#x76EE;&#x7684;&#x7F29;&#x5C0F;&#x6BD4;&#x4F8B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#xFF0C;&#x5373;&#x5982;&#x679C;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#xFF0C;&#x5219;&#x9879;&#x76EE;&#x5C06;&#x7F29;&#x5C0F;</p>
+<pre><code>.item {
+  flow-shrink: &lt;number&gt;
+}
+</code></pre><p>&#x5982;&#x679C;&#x6240;&#x6709;&#x9879;&#x76EE;&#x7684; flex-shrink &#x5C5E;&#x6027;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x90FD;&#x5C06;&#x7B49;&#x6BD4;&#x4F8B;&#x7F29;&#x5C0F;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684; flex-shrink&#x5C5E;&#x6027;&#x4E3A;0&#xFF0C;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x90FD;&#x4E3A;1&#xFF0C;&#x5219;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x524D;&#x8005;&#x4E0D;&#x7F29;&#x5C0F;</p>
+<p>&#x8D1F;&#x503C;&#x5BF9;&#x8BE5;&#x5C5E;&#x6027;&#x65E0;&#x6548;</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>flex-basis</p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x4E86;&#x5728;&#x5206;&#x914D;&#x591A;&#x4F59;&#x7684;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x4E4B;&#x524D;&#xFF0C;&#x9879;&#x76EE;&#x5360;&#x636E;&#x7684;&#x4E3B;&#x8F74;&#x7A7A;&#x95F4;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;auto,&#x5373;&#x9879;&#x76EE;&#x672C;&#x6765;&#x5927;&#x5C0F;</p>
+<pre><code>.item {
+  flex-basis: &lt;length&gt; | auto
+}
+</code></pre><p>&#x5B83;&#x53EF;&#x4EE5;&#x8BBE;&#x4E3A;&#x8DDF; width &#x548C; height &#x5C5E;&#x6027;&#x4E00;&#x6837;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x9879;&#x76EE;&#x5C06;&#x5360;&#x636E;&#x56FA;&#x5B9A;&#x7A7A;&#x95F4;</p>
+</blockquote>
+</li>
+<li><p>flex</p>
+<blockquote>
+<p>&#x662F; flex-grow&#x3001;flex-shrink &#x548C; flex-basis&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0 1 auto&#x3002;</p>
+<pre><code>.item {
+  flex: none | [&lt;&apos;flex-grow&apos;&gt; &lt;&apos;flex-shrink&apos;&gt;? || &lt;&apos;flex-basis&gt;]
+}
+</code></pre><p>&#x8BE5;&#x5C5E;&#x76F8;&#x6709;&#x4E24;&#x4E2A;&#x5FEB;&#x6377;&#x952E;&#xFF1A;auto&#xFF08;1 1 auto&#xFF09;&#x548C; none &#xFF08; 0 0 auto&#xFF09;
+flex: 1 &#xFF08;1 1 0%&#xFF09;</p>
+</blockquote>
+</li>
+<li><p>align-self</p>
+<blockquote>
+<p>&#x5141;&#x8BB8;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#x6709;&#x4E0E;&#x5176;&#x4ED6;&#x9879;&#x76EE;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x8986;&#x76D6; aligin-items &#x5C5E;&#x6027;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; auto,&#x8868;&#x793A;&#x7EE7;&#x627F;&#x7236;&#x5143;&#x7D20;&#x7684; align-items &#x5C5E;&#x6027;&#x3002;</p>
+</blockquote>
+<pre><code>.item {
+  align-self&#xFF1A;auto | flex-start | flex-end | center | baseline | stretch
+}
+</code></pre></li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x5C0F;&#x963F;&#x5706; 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-08-30
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section_2.html" class="navigation navigation-prev " aria-label="Previous page: 第 2 题：div 水平垂直居中">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter_vue/" class="navigation navigation-next " aria-label="Next page: Vue 面试题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第 3 题：Flex","level":"1.2.3","depth":2,"next":{"title":"Vue 面试题","level":"1.3","depth":1,"path":"chapter_vue/README.md","ref":"chapter_vue/README.md","articles":[{"title":"第 1 题：BFC","level":"1.3.1","depth":2,"path":"chapter_vue/section_1.md","ref":"chapter_vue/section_1.md","articles":[]},{"title":"第 2 题：div 水平垂直居中","level":"1.3.2","depth":2,"path":"chapter_vue/section_2.md","ref":"chapter_vue/section_2.md","articles":[]}]},"previous":{"title":"第 2 题：div 水平垂直居中","level":"1.2.2","depth":2,"path":"chapter_css/section_2.md","ref":"chapter_css/section_2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","hide-element","tbfed-pagefooter","-lunr","-search","search-pro","insert-logo","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 小阿圆 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD"},"livereload":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none","url":"https://p26-passport.byteacctimg.com/img/user-avatar/afa93e2726f81753edf0beb3559fae16~40x40.awebp"}},"theme":"default","author":"小阿圆","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端面试指南","language":"zh-hans","output.name":"site","gitbook":"*","description":"前端面试指南"},"file":{"path":"chapter_css/section_3.md","mtime":"2023-08-30T06:18:24.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-11T10:42:13.588Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

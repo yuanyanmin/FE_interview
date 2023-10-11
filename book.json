@@ -1,0 +1,29 @@
+{
+  "title": "前端面试指南",
+  "description": "前端面试指南",
+  "author": "小阿圆",
+  "output.name": "site",
+  "language": "zh-hans",
+  "plugins": 
+  [
+    "toggle-chapters",
+    "hide-element",
+    "tbfed-pagefooter",
+    "-lunr","-search","search-pro",
+    "insert-logo"
+  ],
+  "pluginsConfig": {
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "tbfed-pagefooter": {
+        "copyright": "Copyright &copy 小阿圆 2023",
+        "modify_label": "该文章修订时间：",
+        "modify_format": "YYYY-MM-DD"
+    },
+    "insert-logo": {
+      "url": "https://p26-passport.byteacctimg.com/img/user-avatar/afa93e2726f81753edf0beb3559fae16~40x40.awebp",
+      "style": "background: none"
+    }
+  }
+}
