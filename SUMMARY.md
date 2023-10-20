@@ -17,6 +17,7 @@
     * [第 1 题：ES6常用语法](chapter_es6/section_1.md)
     * [第 2 题：Promise](chapter_es6/section_2.md)
     * [第 3 题：Class](chapter_es6/section_3.md)
+    * [require 与 import](chapter_es6/section_4.md)
 * [Vue 面试题](chapter_vue/README.md)
     * [第 1 题：vue-router](chapter_vue/section_1.md)
     * [第 2 题：组件通信](chapter_vue/section_2.md)
@@ -37,4 +38,5 @@
 * [前端工程化](chapter_construction/README.md)
     * [第 1 题：前端工程内容](chapter_construction/section_1.md)
     * [第 2 题：从0-1搭建项目](chapter_construction/section_2.md)
+    * [第 3 题：前端性能优化](chapter_construction/section_3.md)
 
