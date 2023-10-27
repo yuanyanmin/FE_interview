@@ -39,4 +39,6 @@
     * [第 1 题：前端工程内容](chapter_construction/section_1.md)
     * [第 2 题：从0-1搭建项目](chapter_construction/section_2.md)
     * [第 3 题：前端性能优化](chapter_construction/section_3.md)
+* [笔试题](chapter_code/README.md)
+    * [第 1 题：实现数组的 Map 方法](chapter_code/section_1.md)
 
