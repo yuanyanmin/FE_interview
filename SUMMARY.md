@@ -33,6 +33,7 @@
     * [第 8 题：computed 与 watch](chapter_vue/section_8.md)
     * [第 9 题：路由 hash 模式与 history 模式](chapter_vue/section_9.md)
     * [第 10 题：虚拟DOM原理](chapter_vue/section_10.md)
+    * [第 11 题：MVVM 理解](chapter_vue/section_11.md)
 * [Webpack 面试题](chapter_Webpack/README.md)
     * [第 1 题：webpack里面有哪些内容](chapter_Webpack/section_1.md)
     * [第 2 题：webpack哪些常用的配置](chapter_Webpack/section_2.md)
