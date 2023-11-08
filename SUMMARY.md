@@ -14,6 +14,9 @@
     * [第 4 题：数组遍历方式](chapter_javascript/section_4.md)
     * [第 5 题：axios](chapter_javascript/section_5.md)
     * [第 6 题：跨域](chapter_javascript/section_6.md)
+    * [第 7 题：垃圾回收机制](chapter_javascript/section_7.md)
+    * [第 8 题：输入URL发生了什么](chapter_javascript/section_8.md)
+    * [第 9 题：浏览器缓存缓存策略](chapter_javascript/section_9.md)
 * [ES6 面试题](chapter_es6/README.md)
     * [第 1 题：ES6常用语法](chapter_es6/section_1.md)
     * [第 2 题：Promise](chapter_es6/section_2.md)
@@ -44,4 +47,5 @@
     * [第 3 题：前端性能优化](chapter_construction/section_3.md)
 * [笔试题](chapter_code/README.md)
     * [第 1 题：实现数组的 Map 方法](chapter_code/section_1.md)
+    * [第 2 题：实现防抖节流](chapter_code/section_2.md)
 
