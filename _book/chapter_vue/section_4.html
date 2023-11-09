@@ -1,0 +1,1030 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第 4 题：双向绑定原理 · 前端面试指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="小阿圆">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section_5.html" />
+    
+    
+    <link rel="prev" href="section_3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    FE 汇总面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter_css/">
+            
+                <a href="../chapter_css/">
+            
+                    
+                    CSS 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter_css/section_1.html">
+            
+                <a href="../chapter_css/section_1.html">
+            
+                    
+                    第 1 题：BFC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter_css/section_2.html">
+            
+                <a href="../chapter_css/section_2.html">
+            
+                    
+                    第 2 题：div 水平垂直居中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter_css/section_3.html">
+            
+                <a href="../chapter_css/section_3.html">
+            
+                    
+                    第 3 题：Flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter_css/section_4.html">
+            
+                <a href="../chapter_css/section_4.html">
+            
+                    
+                    第 4 题：双飞翼布局与圣杯布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter_css/section_5.html">
+            
+                <a href="../chapter_css/section_5.html">
+            
+                    
+                    第 5 题：scope 作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter_javascript/">
+            
+                <a href="../chapter_javascript/">
+            
+                    
+                    Javascript 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter_javascript/section_1.html">
+            
+                <a href="../chapter_javascript/section_1.html">
+            
+                    
+                    第 1 题：事件循环机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter_javascript/section_2.html">
+            
+                <a href="../chapter_javascript/section_2.html">
+            
+                    
+                    第 2 题：深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter_javascript/section_3.html">
+            
+                <a href="../chapter_javascript/section_3.html">
+            
+                    
+                    第 3 题：闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter_javascript/section_4.html">
+            
+                <a href="../chapter_javascript/section_4.html">
+            
+                    
+                    第 4 题：数组遍历方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter_javascript/section_5.html">
+            
+                <a href="../chapter_javascript/section_5.html">
+            
+                    
+                    第 5 题：axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter_javascript/section_6.html">
+            
+                <a href="../chapter_javascript/section_6.html">
+            
+                    
+                    第 6 题：跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter_javascript/section_7.html">
+            
+                <a href="../chapter_javascript/section_7.html">
+            
+                    
+                    第 7 题：垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter_javascript/section_8.html">
+            
+                <a href="../chapter_javascript/section_8.html">
+            
+                    
+                    第 8 题：输入URL发生了什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter_javascript/section_9.html">
+            
+                <a href="../chapter_javascript/section_9.html">
+            
+                    
+                    第 9 题：浏览器缓存缓存策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter_es6/">
+            
+                <a href="../chapter_es6/">
+            
+                    
+                    ES6 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter_es6/section_1.html">
+            
+                <a href="../chapter_es6/section_1.html">
+            
+                    
+                    第 1 题：ES6常用语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter_es6/section_2.html">
+            
+                <a href="../chapter_es6/section_2.html">
+            
+                    
+                    第 2 题：Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter_es6/section_3.html">
+            
+                <a href="../chapter_es6/section_3.html">
+            
+                    
+                    第 3 题：Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter_es6/section_4.html">
+            
+                <a href="../chapter_es6/section_4.html">
+            
+                    
+                    require 与 import
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Vue 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="section_1.html">
+            
+                <a href="section_1.html">
+            
+                    
+                    第 1 题：vue-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="section_2.html">
+            
+                <a href="section_2.html">
+            
+                    
+                    第 2 题：组件通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="section_3.html">
+            
+                <a href="section_3.html">
+            
+                    
+                    第 3 题：Vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="section_4.html">
+            
+                <a href="section_4.html">
+            
+                    
+                    第 4 题：双向绑定原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="section_5.html">
+            
+                <a href="section_5.html">
+            
+                    
+                    第 5 题：生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="section_6.html">
+            
+                <a href="section_6.html">
+            
+                    
+                    第 6 题：Vue2 与 Vue3 区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="section_7.html">
+            
+                <a href="section_7.html">
+            
+                    
+                    第 7 题：路由守卫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="section_8.html">
+            
+                <a href="section_8.html">
+            
+                    
+                    第 8 题：computed 与 watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="section_9.html">
+            
+                <a href="section_9.html">
+            
+                    
+                    第 9 题：路由 hash 模式与 history 模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="section_10.html">
+            
+                <a href="section_10.html">
+            
+                    
+                    第 10 题：虚拟DOM原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="section_11.html">
+            
+                <a href="section_11.html">
+            
+                    
+                    第 11 题：MVVM 理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter_Webpack/">
+            
+                <a href="../chapter_Webpack/">
+            
+                    
+                    Webpack 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter_Webpack/section_1.html">
+            
+                <a href="../chapter_Webpack/section_1.html">
+            
+                    
+                    第 1 题：webpack里面有哪些内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter_Webpack/section_2.html">
+            
+                <a href="../chapter_Webpack/section_2.html">
+            
+                    
+                    第 2 题：webpack哪些常用的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter_typescript/">
+            
+                <a href="../chapter_typescript/">
+            
+                    
+                    Typescript 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter_typescript/section_1.html">
+            
+                <a href="../chapter_typescript/section_1.html">
+            
+                    
+                    第 1 题：泛型的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter_node/">
+            
+                <a href="../chapter_node/">
+            
+                    
+                    Node 面试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter_node/section_1.html">
+            
+                <a href="../chapter_node/section_1.html">
+            
+                    
+                    第 1 题：Nest.js 装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter_node/section_2.html">
+            
+                <a href="../chapter_node/section_2.html">
+            
+                    
+                    第 2 题：Nest.js 与 Egg.js 等区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter_construction/">
+            
+                <a href="../chapter_construction/">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter_construction/section_1.html">
+            
+                <a href="../chapter_construction/section_1.html">
+            
+                    
+                    第 1 题：前端工程内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter_construction/section_2.html">
+            
+                <a href="../chapter_construction/section_2.html">
+            
+                    
+                    第 2 题：从0-1搭建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter_construction/section_3.html">
+            
+                <a href="../chapter_construction/section_3.html">
+            
+                    
+                    第 3 题：前端性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter_code/">
+            
+                <a href="../chapter_code/">
+            
+                    
+                    笔试题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter_code/section_1.html">
+            
+                <a href="../chapter_code/section_1.html">
+            
+                    
+                    第 1 题：实现数组的 Map 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter_code/section_2.html">
+            
+                <a href="../chapter_code/section_2.html">
+            
+                    
+                    第 2 题：实现防抖节流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第 4 题：双向绑定原理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;-4-&#x9898;&#xFF1A;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x539F;&#x7406;">&#x7B2C; 4 &#x9898;&#xFF1A;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x539F;&#x7406;</h1>
+<p>vue&#x4E3A;MVVM&#x6846;&#x67B6;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x6A21;&#x578B;data&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x9875;&#x9762;&#x89C6;&#x56FE;&#x4F1A;&#x5F97;&#x5230;&#x54CD;&#x5E94;&#x66F4;&#x65B0;&#xFF0C;&#x5176;&#x539F;&#x7406;&#x5BF9; data &#x7684; getter/setter &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x62E6;&#x622A;&#xFF08;Object.defineProperty &#x6216;&#x8005; Proxy&#xFF09;,&#x5229;&#x7528;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5728;getter&#x65B9;&#x6CD5;&#x4E2D;&#x8FDB;&#x884C;&#x8BA2;&#x9605;&#xFF0C;&#x5728;setter&#x65B9;&#x6CD5;&#x4E2D;&#x53D1;&#x5E03;&#x901A;&#x77E5;&#xFF0C;&#x8BA9;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x8005;&#x5B8C;&#x6210;&#x54CD;&#x5E94;</p>
+<h3 id="vue2">vue2</h3>
+<p>&#x57FA;&#x4E8E; Object.defineProperty() &#x91CD;&#x65B0;&#x5B9A;&#x4E49; get &#x548C; set &#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4FEE;&#x6539;&#x89E6;&#x53D1;  set &#x65B9;&#x6CD5;&#x8D4B;&#x503C;&#xFF0C;&#x83B7;&#x53D6;&#x6216;&#x89E6;&#x53D1; get &#x65B9;&#x6CD5;&#x53D6;&#x503C;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x52AB;&#x6301;&#x53D1;&#x5E03;&#x4FE1;&#x606F;&#x3002;</p>
+<p>vue.js&#x662F;&#x91C7;&#x7528;&#x6570;&#x636E;&#x52AB;&#x6301;&#x7ED3;&#x5408;&#x53D1;&#x5E03;&#x8005;-&#x8BA2;&#x9605;&#x8005;&#x6A21;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;Object.defineProperty()&#x6765;&#x52AB;&#x6301;&#x5404;&#x4E2A;&#x5C5E;&#x6027;&#x7684;setter&#xFF0C;getter&#xFF0C;&#x5728;&#x6570;&#x636E;&#x53D8;&#x52A8;&#x65F6;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x7ED9;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x89E6;&#x53D1;&#x76F8;&#x5E94;&#x7684;&#x76D1;&#x542C;&#x56DE;&#x8C03;&#x6765;&#x6E32;&#x67D3;&#x89C6;&#x56FE;&#x3002;</p>
+<ul>
+<li><p>&#x9700;&#x8981;observer(&#x89C2;&#x5BDF;&#x8005;)&#x5BF9;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x9012;&#x5F52;&#x904D;&#x5386;&#xFF0C;&#x5305;&#x62EC;&#x5B50;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x90FD;&#x52A0;&#x4E0A; setter&#x548C;getter
+&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x7ED9;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x67D0;&#x4E2A;&#x503C;&#x8D4B;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;setter&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x80FD;&#x76D1;&#x542C;&#x5230;&#x4E86;&#x6570;&#x636E;&#x53D8;&#x5316;</p>
+</li>
+<li><p>compile(&#x6A21;&#x677F;&#x89E3;&#x6790;&#x5668;)&#x89E3;&#x6790;&#x6A21;&#x677F;&#x6307;&#x4EE4;&#xFF0C;&#x5C06;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x66FF;&#x6362;&#x6210;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x521D;&#x59CB;&#x5316;&#x6E32;&#x67D3;&#x9875;&#x9762;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x5C06;&#x6BCF;&#x4E2A;&#x6307;&#x4EE4;&#x5BF9;&#x5E94;&#x7684;&#x8282;&#x70B9;&#x7ED1;&#x5B9A;&#x66F4;&#x65B0;&#x51FD;&#x6570;&#xFF0C;&#x6DFB;&#x52A0;&#x76D1;&#x542C;&#x6570;&#x636E;&#x7684;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x4E00;&#x65E6;&#x6570;&#x636E;&#x6709;&#x53D8;&#x52A8;&#xFF0C;&#x6536;&#x5230;&#x901A;&#x77E5;&#xFF0C;&#x66F4;&#x65B0;&#x89C6;&#x56FE;</p>
+</li>
+<li><p>Watcher(&#x8BA2;&#x9605;&#x8005;)&#x662F;Observer&#x548C;Compile&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x6865;&#x6881;&#xFF0C;&#x4E3B;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;:
+1&#x3001;&#x5728;&#x81EA;&#x8EAB;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#x5F80;&#x5C5E;&#x6027;&#x8BA2;&#x9605;&#x5668;(dep)&#x91CC;&#x9762;&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;
+2&#x3001;&#x81EA;&#x8EAB;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;update()&#x65B9;&#x6CD5;
+3&#x3001;&#x5F85;&#x5C5E;&#x6027;&#x53D8;&#x52A8;dep.notice()&#x901A;&#x77E5;&#x65F6;&#xFF0C;&#x80FD;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x7684;update()&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x89E6;&#x53D1;Compile&#x4E2D;&#x7ED1;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x5219;&#x529F;&#x6210;&#x8EAB;&#x9000;&#x3002;</p>
+</li>
+<li><p>MVVM&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x6574;&#x5408;Observer&#x3001;Compile&#x548C;Watcher&#x4E09;&#x8005;&#xFF0C;&#x901A;&#x8FC7;Observer&#x6765;&#x76D1;&#x542C;&#x81EA;&#x5DF1;&#x7684;model&#x6570;&#x636E;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;Compile&#x6765;&#x89E3;&#x6790;&#x7F16;&#x8BD1;&#x6A21;&#x677F;&#x6307;&#x4EE4;&#xFF0C;&#x6700;&#x7EC8;&#x5229;&#x7528;Watcher&#x642D;&#x8D77;Observer&#x548C;Compile&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x6865;&#x6881;&#xFF0C;&#x8FBE;&#x5230;&#x6570;&#x636E;&#x53D8;&#x5316; -&gt; &#x89C6;&#x56FE;&#x66F4;&#x65B0;&#xFF1B;&#x89C6;&#x56FE;&#x4EA4;&#x4E92;&#x53D8;&#x5316;(input) -&gt; &#x6570;&#x636E;model&#x53D8;&#x66F4;&#x7684;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x6548;&#x679C;</p>
+</li>
+</ul>
+<p><img src="assets/vue2_&#x53CC;&#x5411;&#x7ED1;&#x5B9A;.jpg" alt="&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"></p>
+<h3 id="vue3">vue3</h3>
+<p>3.x&#x7684;&#x4E0E;2.x&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x4E00;&#x81F4;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x6570;&#x636E;&#x7684;&#x52AB;&#x6301;&#x4F7F;&#x7528;Proxy&#x800C;&#x4E0D;&#x662F;Object.defineProperty&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;Proxy&#x76F8;&#x6BD4;Object.defineProperty&#x5728;&#x5904;&#x7406;&#x6570;&#x7EC4;&#x548C;&#x65B0;&#x589E;&#x5C5E;&#x6027;&#x7684;&#x54CD;&#x5E94;&#x5F0F;&#x5904;&#x7406;&#x4E0A;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;</p>
+<h3 id="&#x95EE;&#x9898;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7528;proxy-&#x4EE3;&#x66FF;-defineproperty-&#xFF1F;">&#x95EE;&#x9898;&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48;&#x7528;Proxy &#x4EE3;&#x66FF; defineProperty &#xFF1F;</h3>
+<h4 id="objectdefineproperty">Object.defineProperty</h4>
+<p>Object.defineProperty() &#x65B9;&#x6CD5;&#x4F1A;&#x76F4;&#x63A5;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x5C5E;&#x6027;&#xFF0C;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x73B0;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6B64;&#x5BF9;&#x8C61;</p>
+<h5 id="&#x4E3A;&#x4EC0;&#x4E48;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x54CD;&#x5E94;&#x5F0F;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x54CD;&#x5E94;&#x5F0F;&#xFF1F;</h5>
+<p>&#x901A;&#x8FC7; defineProperty &#x4E24;&#x4E2A;&#x5C5E;&#x6027; get &#x4E0E; set</p>
+<ul>
+<li>get</li>
+</ul>
+<blockquote>
+<p>&#x5C5E;&#x6027;&#x7684; getter&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x8BE5;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x3002;&#x6267;&#x884C;&#x65F6;&#x4E0D;&#x4F20;&#x5165;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x4F20;&#x5165; this &#x5BF9;&#x8C61;&#x3002;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x88AB;&#x7528;&#x4F5C;&#x5C5E;&#x6027;&#x7684;&#x503C;</p>
+</blockquote>
+<ul>
+<li>set</li>
+</ul>
+<blockquote>
+<p>&#x5C5E;&#x6027;&#x7684; set &#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x5C5E;&#x6027;&#x503C;&#x88AB;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF08;&#x88AB;&#x8D4B;&#x4E88;&#x7684;&#x65B0;&#x503C;&#xFF09;&#xFF0C;&#x4F1A;&#x4F20;&#x5165;&#x8D4B;&#x503C;&#x7684;this&#x5BF9;&#x8C61;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; undefined</p>
+</blockquote>
+<pre><code>function update() {
+    app.innerText = obj.foo
+}
+
+function defineReactive(obj, key, val) {
+  Object.defineProperty(obj, key, {
+    get() {
+      console.log(`get ${key}:${val}`);
+      return val
+    },
+    set(newVal) {
+      if (newVal !== val) {
+        val = newVal
+        update()
+      }
+    }
+  })
+}
+
+// &#x8C03;&#x7528;defineReactive&#xFF0C;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x89E6;&#x53D1;update&#x65B9;&#x6CD5;&#xFF0C;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x54CD;&#x5E94;&#x5F0F;
+const obj = {}
+defineReactive(obj, &apos;foo&apos;, &apos;&apos;)
+setTimeout(()=&gt;{
+  obj.foo = new Date().toLocaleTimeString()
+},1000)
+</code></pre><h5 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h5>
+<ul>
+<li>&#x68C0;&#x6D4B;&#x4E0D;&#x5230;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x7684;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;</li>
+<li>&#x6570;&#x7EC4;API&#x65E0;&#x6CD5;&#x76D1;&#x542C;&#x5230;</li>
+<li>&#x9700;&#x8981;&#x5BF9;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x76D1;&#x542C;&#xFF0C;&#x82E5;&#x5D4C;&#x5957;&#x5BF9;&#x8C61;&#xFF0C;&#x9700;&#x8981;&#x6DF1;&#x5C42;&#x76D1;&#x542C;&#xFF0C;&#x9020;&#x6210;&#x6027;&#x80FD;&#x95EE;&#x9898;</li>
+</ul>
+<h4 id="proxy">Proxy</h4>
+<p>Proxy&#x7684;&#x76D1;&#x542C;&#x662F;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x4F1A;&#x8FDB;&#x5165;&#x76D1;&#x542C;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x5C31;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4EE3;&#x7406;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x4E86;</p>
+<pre><code>function reactive(obj) {
+  if (typeof obj !== &apos;object&apos; &amp;&amp; obj != null) {
+    return obj
+  }
+  // Proxy&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x5BF9;&#x8C61;&#x5916;&#x5C42;&#x52A0;&#x62E6;&#x622A;
+  const observed = new Proxy(obj, {
+    get(target, key, receiver) {
+      const res = Reflect.get(target, key, receiver)
+      console.log(`&#x83B7;&#x53D6;${key}:${res}`)
+      return res
+    },
+    set(target, key, value, receiver) {
+      const res = Reflect.set(target, key, value, receiver)
+      console.log(`&#x8BBE;&#x7F6E;${key}:${value}`)
+      return res
+    },
+    deleteProperty(target, key) {
+      const res = Reflect.deleteProperty(target, key)
+      console.log(`&#x5220;&#x9664;${key}:${res}`)
+      return res
+    }
+  })
+  return observed
+}
+</code></pre><h4 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h4>
+<ul>
+<li><p>Object.defineProperty &#x53EA;&#x80FD;&#x904D;&#x5386;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x52AB;&#x6301;</p>
+</li>
+<li><p>Proxy &#x53EF;&#x4EE5;&#x52AB;&#x6301;&#x6574;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>Proxy &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x76D1;&#x542C;&#x6570;&#x7EC4;&#x7684;&#x53D8;&#x5316;</p>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x5C0F;&#x963F;&#x5706; 2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-10-18
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section_3.html" class="navigation navigation-prev " aria-label="Previous page: 第 3 题：Vuex">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section_5.html" class="navigation navigation-next " aria-label="Next page: 第 5 题：生命周期">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第 4 题：双向绑定原理","level":"1.5.4","depth":2,"next":{"title":"第 5 题：生命周期","level":"1.5.5","depth":2,"path":"chapter_vue/section_5.md","ref":"chapter_vue/section_5.md","articles":[]},"previous":{"title":"第 3 题：Vuex","level":"1.5.3","depth":2,"path":"chapter_vue/section_3.md","ref":"chapter_vue/section_3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","hide-element","tbfed-pagefooter","-lunr","-search","search-pro","insert-logo"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 小阿圆 2023","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD"},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none","url":"https://p26-passport.byteacctimg.com/img/user-avatar/afa93e2726f81753edf0beb3559fae16~40x40.awebp"}},"theme":"default","author":"小阿圆","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端面试指南","language":"zh-hans","output.name":"site","gitbook":"*","description":"前端面试指南"},"file":{"path":"chapter_vue/section_4.md","mtime":"2023-10-18T10:53:34.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-09T05:53:03.468Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
