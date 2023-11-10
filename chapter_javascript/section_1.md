@@ -14,8 +14,8 @@ js分为同步代码和异步代码。执行js的时候，会从上往下执行�
 
 
 ## 宏任务与微任务
-  * 微任务：Promise、Async/Await、MutationObserver
-  * 宏任务：Ajax、setTimeout、setInterval、script 整体代码、UI render
+  * 微任务：Promise.then、Async/Await、MutationObserver
+  * 宏任务：Ajax、setTimeout、setInterval、script 整体代码、UI render、postMessage
 
 
 ## Event Loop 过程
