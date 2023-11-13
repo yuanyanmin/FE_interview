@@ -19,6 +19,7 @@
     * [第 9 题：浏览器缓存缓存策略](chapter_javascript/section_9.md)
     * [第 10 题：数组可以改变原数组的方法](chapter_javascript/section_10.md)
     * [第 11 题：http2 和 http1 不同](chapter_javascript/section_11.md)
+    * [第 12 题：http 状态码](chapter_javascript/section_12.md)
 * [ES6 面试题](chapter_es6/README.md)
     * [第 1 题：ES6常用语法](chapter_es6/section_1.md)
     * [第 2 题：Promise](chapter_es6/section_2.md)
