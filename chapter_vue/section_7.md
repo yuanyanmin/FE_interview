@@ -100,3 +100,21 @@ beforeRouteUpdate (to, from) {
 * 触发 DOM 更新
 * 调用 beforeRouteEnter 守卫中传给 next 的回调函数，创建好的组件实例会作为回调函数的参数传入
 
+
+### 总结
+
+路由守卫包括三类：全局守卫、路由独享守卫、组件守卫
+全局守卫有包括三个
+beforeEach：路由跳转之前执行，一般用于登录鉴权，动态路由等处理
+beforeResolve：这个也是路由跳转之前执行，与beforeEach不同的是，执行时间不同，他要晚于第一个，他是在组件以及路由解析完成之后执行
+afterEach：没有next方法，此时路由以及跳转完成，可以在该守卫中处理页面，例如标题等
+
+路由独享守卫包括一个
+beforeEnter: 是在定义路由的时候写，他只在进入路由时候触发
+
+组件守卫有三个
+beforeRouteEnter: 在进入组件之前，此时获取不到 this 实例，需要在 next 方法里面传入回到函数获取
+beforeRouteUpdate：组件更新触发，例如 /1 /2 修改时候可以监听，已经可以访问this，所以不支持 next 传递回调
+beforeRouteLeave：导航离开该组件时触发，可以进行提示，是否离开页面等
+
+执行顺序是 beforeEach ---> beforeEnter ---> beforeRouteEnter ---> beforeResolve ---> afterEach
