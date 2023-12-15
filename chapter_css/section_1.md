@@ -17,7 +17,7 @@ BFC 即 块级格式化上下文。可以看做是隔离了的独立容器，容
 
 ## 触发条件
 
-* body 根元素
+* html 根元素
 * 浮动元素 float 除了 none 以外的值
 * 绝对定位元素 position (absolute、fixed)
 * display 为 inline-block、flex、table-cells
@@ -26,4 +26,6 @@ BFC 即 块级格式化上下文。可以看做是隔离了的独立容器，容
 ## 特性及其应用
 
 * 外边距折叠（margin折叠）
-* 清除浮动
+* 高度塌陷（清除浮动）
+* 两栏布局
+
