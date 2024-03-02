@@ -112,7 +112,7 @@
 
 * flex-shrink
 
-  > 定义项目的缩小比例，默认为，即如果空间不足，则项目将缩小
+  > 定义项目的缩小比例，默认为1，即如果空间不足，则项目将缩小
   ```
   .item {
     flow-shrink: <number>
@@ -153,3 +153,5 @@
     align-self：auto | flex-start | flex-end | center | baseline | stretch
   }
   ```
+
+[flex布局——flex简写](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
