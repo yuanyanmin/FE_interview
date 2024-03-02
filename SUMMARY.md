@@ -18,8 +18,7 @@
     * [第 8 题：输入URL发生了什么](chapter_javascript/section_8.md)
     * [第 9 题：浏览器缓存缓存策略](chapter_javascript/section_9.md)
     * [第 10 题：数组可以改变原数组的方法](chapter_javascript/section_10.md)
-    * [第 11 题：http2 和 http1 不同](chapter_javascript/
-    section_11.md)
+    * [第 11 题：http2 和 http1 不同](chapter_javascript/section_11.md)
     * [第 12 题：http 状态码](chapter_javascript/section_12.md)
     * [第 13 题：JavaScript 设计模式](chapter_javascript/section_13.md)
     * [第 14 题：防抖与节流](chapter_javascript/section_14.md)

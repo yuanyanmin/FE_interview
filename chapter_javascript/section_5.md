@@ -37,7 +37,7 @@ instance.interceptors.request.use(
 
 ```
 instance.interceptors.response.use(
-	response = {
+	response => {
 		//拦截响应，做统一处理
 		if(response.data.code){
 			switch(response.data.code){
